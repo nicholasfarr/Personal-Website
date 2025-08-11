@@ -12,6 +12,9 @@ export default function App() {
   return (
     <div className="relative text-gray-900 dark:text-white bg-transparent dark:bg-transparent">
       <BackgroundGlobe />
+      
+    <BackgroundGlobe />
+    <div className="fixed inset-0 -z-10 bg-black/25" />
       <Header />
       <main className="pt-14">{/* header is ~56px tall */} 
         <Hero />

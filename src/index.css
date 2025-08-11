@@ -1,5 +1,21 @@
 @import "tailwindcss";
-body{
 
-    @apply font-sans;
+/* Typography tokens */
+:root {
+  --font-body: Inter, system-ui, sans-serif;
+  --font-display: "Space Grotesk", Inter, system-ui, sans-serif;
+
+  /* Brand color */
+  --orange: #f97316; /* Tailwind orange-500 */
 }
+
+/* Global defaults */
+html, body { height: 100%; }
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility for display headings */
+.h-display { font-family: var(--font-display); }

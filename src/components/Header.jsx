@@ -33,14 +33,23 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="relative hover:opacity-90 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-black dark:after:bg-white after:transition-all hover:after:w-full"
+              className="relative hover:opacity-90 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all hover:after:w-full"
             >
               {item.label}
             </a>
           ))}
+
+          {/* Download Resume Button */}
+          <a
+            href= "/resume/NickFarr_Resume.pdf"
+            download
+            className="ml-4 px-4 py-2 rounded-lg bg-orange-500 text-white font-medium shadow-lg hover:bg-orange-600 transition-colors"
+          >
+            Download Resume
+          </a>
         </nav>
 
-        {/* mobile menu placeholder (we’ll wire later) */}
+        {/* Mobile Menu Placeholder */}
         <button className="md:hidden rounded-lg px-3 py-1 border border-zinc-300 dark:border-zinc-700 text-sm">
           Menu
         </button>
